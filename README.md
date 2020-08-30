@@ -5,7 +5,7 @@ Logo
 [![tests](https://github.com/zenware/huehue/workflows/tests/badge.svg)](https://github.com/zenware/huehue/actions?workflow=tests)
 [![Codecov](https://codecov.io/gh/zenware/huehue/branch/master/graph/badge.svg)](https://codecov.io/gh/zenware/huehue)
 [![PyPI](https://img.shields.io/pypi/v/huehue.svg)](https://pypi.org/project/huehue/)
-[![Read the Docs](https://readthedocs.org/projects/huehue/badge/)](https://hypermodern-python.readthedocs.io/)
+[![Read the Docs](https://readthedocs.org/projects/huehue/badge/)](https://huehue.readthedocs.io/)
 
 This is a CLI and API Client for the Philips Hue lights written in Python.
 I decided to write this project so I could add light control to some personal automation tasks.
