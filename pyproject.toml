@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "huehue"
+version = "0.1.0"
+description = ""
+authors = ["Jay Looney <jay.m.looney@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+urllib3 = "^1.25.9"
+python-decouple = "^3.3"
+click = "^7.1.2"
+click-log = "^0.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.3"
+nox = "^2020.5.24"
+pytest-mock = "^3.2.0"
+pytest-cov = "^2.10.0"
+coverage = {extras = ["toml"], version = "^5.2.1"}
+black = "^19.10b0"
+flake8 = "^3.8.3"
+flake8-bandit = "^2.1.2"
+flake8-black = "^0.2.1"
+flake8-bugbear = "^20.1.4"
+flake8-import-order = "^0.18.1"
+safety = "^1.9.0"
+pre-commit = "^2.6.0"
+mypy = "^0.782"
+flake8-annotations = "^2.3.0"
+flake8-docstrings = "^1.5.0"
+darglint = "^1.5.2"
+codecov = "^2.1.8"
+pydocstyle = "^5.0.2"
+
+[tool.poetry.scripts]
+huehue = "huehue.cli:cli"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["huehue"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
